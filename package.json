@@ -1,0 +1,41 @@
+{
+  "name": "@alex_xu/dao",
+  "version": "1.0.0",
+  "description": "基于localStorage封装的可以设置过期时间的库，并可结合vuex/redux做数据持久化",
+  "main": "dist/dao.cjs.js",
+  "module": "dist/dao.esm.js",
+  "browser": "dist/dao.umd.js",
+  "scripts": {
+    "dev": "npx --max_old_space_size=8096 father doc dev --host 0.0.0.0",
+    "build": "father build",
+    "build:doc": "father doc build",
+    "deploy": "father doc deploy"
+  },
+  "devDependencies": {
+    "father": "^2.16.0",
+    "pre-commit": "^1.2.2"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.7.1",
+    "babel-plugin-import": "^1.12.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrXujiang/dao.js.git"
+  },
+  "author": "@alex_xu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MrXujiang/dao.js/issues"
+  },
+  "homepage": "https://github.com/MrXujiang/dao.js#readme",
+  "files": [
+    "dist"
+  ],
+  "browserslist": [
+    "last 2 version",
+    "Firefox ESR",
+    "> 1%",
+    "ie >= 9"
+  ]
+}
